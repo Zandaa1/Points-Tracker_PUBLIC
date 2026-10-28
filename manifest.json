@@ -1,0 +1,15 @@
+{
+    "short_name": "PWU Points App",
+    "name": "PWU Points App - Points Wallet",
+    "display": "standalone",
+    "id": "/?source=pwa",
+    "start_url": "/?source=pwa",
+    "icons": [
+        {
+            "src": "img/pwu_logo.png",
+            "sizes": "any",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ]
+  }

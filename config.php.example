@@ -1,0 +1,14 @@
+<?php
+// Local demonstration only. Copy to ignored config.php and supply your own local DB account.
+define('DB_SERVER', '127.0.0.1');
+define('DB_USERNAME', '');
+define('DB_PASSWORD', '');
+define('DB_NAME', 'portfolio_demo');
+mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+try {
+    $link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+    mysqli_set_charset($link, 'utf8mb4');
+} catch (Throwable $e) {
+    http_response_code(503);
+    exit('Local demo database unavailable. Complete README setup.');
+}
